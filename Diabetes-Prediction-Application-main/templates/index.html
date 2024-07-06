@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>startup</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+    <div class="main">
+    <h1 class="heading">Diabeties Prediction</h1>
+    <div class="main2">
+    <div class="box">
+    <form action ="/login" method = "post">
+        
+    <p>Age</p>
+    <p><input class="text" type ="text" name ="Age"/></p>
+
+    <p>Education</p>
+    <p><input class="text" type ="text" name ="Education"/></p>
+
+    <p>Income</p>
+    <p><input class="text" type ="text" name ="Income"/></p>
+
+    <p>BMI</p>
+    <p><input class="text" type ="text" name ="bmi"/></p>
+
+    <p>General Health</p>
+    <p><input class="text" type ="text" name ="GenHlth"/></p>
+
+    <p>MentHlth</p>
+    <p><input class="text" type ="text" name ="MentHlth"/></p>
+
+    <p>PhysHlth</p>
+    <p><input class="text" type ="text" name ="PhysHlth"/></p>
+</div>
+
+    <div class="drop">
+        <div class="drop1">
+    <label for ="HighBP">HighBP </label>
+    <select class="down" name = "hbp">
+    <option value ="y">Yes</option>
+    <option value ="n">NO</option>
+    </select>
+
+    <label for ="HighChol">HighChol</label>
+    <select class="down" name = "hc">
+    <option value ="y">Yes</option>
+    <option value ="n">NO</option>
+    </select>
+
+    <label for ="CholCheck">CholCheck</label>
+    <select class="down" name = "cc">
+    <option value ="y">Yes</option>
+    <option value ="n">NO</option>
+    </select>
+    
+    <label for ="Smoker">Smoker</label>
+    <select class="down" name = "s">
+    <option value ="y">Yes</option>
+    <option value ="n">NO</option>
+    </select>
+    
+    <label for ="Stroke">Stroke</label>
+    <select class="down" name = "st">
+    <option value ="y">Yes</option>
+    <option value ="n">NO</option>
+    </select>
+    
+    <label for ="HeartDiseaseorAttack">HeartDiseaseorAttack</label>
+    <select class="down" name = "hda">
+    <option value ="y">Yes</option>
+    <option value ="n">NO</option>
+    </select>
+    
+    <label for ="PhysActivity">PhysActivity</label>
+    <select class="down" name = "pa">
+    <option value ="y">Yes</option>
+    <option value ="n">NO</option>
+    </select>
+</div>
+<div class="drop1">
+    <label for ="Fruits">Fruits</label>
+    <select class="down" name = "f">
+    <option value ="y">Yes</option>
+    <option value ="n">NO</option>
+    </select>
+
+    <label for ="Veggies">Veggies</label>
+    <select class="down" name = "v">
+    <option value ="y">Yes</option>
+    <option value ="n">NO</option>
+    </select>
+
+    <label for ="HvyAlcoholConsump">HvyAlcoholConsump</label>
+    <select class="down" name = "hac">
+    <option value ="y">Yes</option>
+    <option value ="n">NO</option>
+    </select>
+
+    <label for ="AnyHealthcare">AnyHealthcare</label>
+    <select class="down" name = "ahc">
+    <option value ="y">Yes</option>
+    <option value ="n">NO</option>
+    </select>
+
+    <label for ="NoDocbcCost">NoDocbcCost</label>
+    <select class="down" name = "ndc">
+    <option value ="y">Yes</option>
+    <option value ="n">NO</option>
+    </select>
+
+    <label for ="DiffWalk">DiffWalk</label>
+    <select class="down" name = "dw">
+    <option value ="y">Yes</option>
+    <option value ="n">NO</option>
+    </select>
+
+    <label for ="Sex">Sex</label>
+    <select class="down" name = "sex">
+    <option value ="y">Male</option>
+    <option value ="n">Female</option>
+    </select>
+</div>
+</div>
+</div>
+
+    <p><input class="submit" type ="submit" value ="submit"/></p>
+
+    <h2 class="output"><b>{{y}}</b></h2>
+    
+    
+    
+</form>   
+</div>  
+</body>
+</html>
